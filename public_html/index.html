@@ -1,0 +1,124 @@
+<!--/* 
+    Created on : 26-Apr-2020, 14:30:00
+    Author     : fabiana
+*/-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width" />  
+
+      <!--Style path-->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <!--Script JQuery--> 
+      <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+       <!--Script bootstrap-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <!--Script path to index.js-->
+      <script type="text/javascript" src="js/index.js"></script>
+
+    </head>
+    <body>
+
+        <header>
+
+            <!--Navigation bar-->
+            <nav class="navbar navbar-inverse navbar-static-top">
+
+                <div class="container-fluid">
+                    <div class="navbar-left">
+                        <output>
+                            <h4>Drink of the day</h4>
+                        </output>
+                    </div>
+
+                    <!--Calling method loadDrink() from index.js-->
+                    <div class="navbar-right">
+                        <button onClick="loadDrink()" class="btn btn-default">Random Drink</button>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <!--Title-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div  class="title">
+                    <h1> Which Drink are we having today?</h1>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="clearfix">
+                        <h2 class="panel-title search-titulo-panel">Drink Information</h2>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+    <!--Div of a form to show informations about the drinks-->
+                    <div class="form-group">
+
+                        <div class="col-sm-3">
+                            <img id="img" alt="" class="image" src="image/cocktails.jpg">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <b>Drink Name</b>
+                            <output class="form-control" id="drink" ></output>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <b>Alcoholic</b>
+                            <output class="form-control" id="alcoholic"></output>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <b>Drink Category</b>
+                            <output class="form-control" id="category"></output>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <b>Type of Glass</b>
+                            <output class="form-control" id="glass"></output>
+                        </div>
+
+                    </div>
+
+    <!--Click the link to show and hide the recipe of the drink.
+    Its using the class collapse from bootstrap to do the hiding and showing the element-->
+                    <a href="#demo" class="btn btn-info" data-toggle="collapse">See Recipe</a>
+                    <div id="demo" class="collapse">
+                        <div class="col-sm-3">
+                            <b>Ingredients</b>
+                            <output id="ingredients" ></output>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <b>Measures</b>
+                            <output id="measures"></output>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <b>Instructions</b>
+                            <output id="instructions"></output>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+/* 
+    Created on : 26-Apr-2020, 14:30:00
+    Author     : fabiana
+*/
+
+/*Big Screen*/
+@midia(min-width: 768px){
+	
+	.panel-default{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.alert{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+.navbar-brand{
+	padding: 0px;
+	margin-bottom: 10px;
+}
+
+
+.new-link-panel{
+	float: right;
+	padding: 0px;
+}
+
+.search-titulo-panel{
+	float: left;
+	padding-top: 2px; 
+}
+
+.title{
+	text-align: center;
+}
+
+#txt{
+	float: left;
+}
+
+#nav{
+ 	float: left;
+}
+
+.btn{
+        margin-top: 7px;
+        margin-right: 7px;
+}
+
+.image{
+        width: 225px;
+        height: 225px;
+}

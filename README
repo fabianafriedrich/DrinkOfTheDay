@@ -1,0 +1,21 @@
+#######################################################################
+Student Information
+Name: Fabiana Friedrich
+Stundet id: 2017184
+
+#######################################################################
+
+			Drink of the Day
+
+Public API: The CocktailDB
+Link information: https://www.thecocktaildb.com/api.php
+API that is being consume: https://www.thecocktaildb.com/api/json/v1/1/random.php
+
+Drink of the Day is a web site that chooses a drink for you to drink, you can see the recipe for that drink.
+
+So, how it works? 
+It's simple, you just need to click on the button at the top of the page where it says "Random Drink" and the site will choose some random drink. And if you click on the "See Recipe" button, the recipe for how this drink is made will appear. 
+
+How cool is that?
+
+Call your friends and enjoy the Drinks
